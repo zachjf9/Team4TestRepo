@@ -1,0 +1,111 @@
+:root {
+  --scsu-blue: #0033A0;
+  --scsu-white: #FFFFFF;
+  --scsu-gray: #F4F4F4;
+  --scsu-dark: #1a1a1a;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--scsu-gray);
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--scsu-blue);
+  color: var(--scsu-white);
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: inline-block;
+}
+
+.nav-right {
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--scsu-white);
+  text-decoration: none;
+}
+
+.nav-right:hover {
+  text-decoration: underline;
+}
+
+/* LAYOUT */
+.container {
+  padding: 20px;
+}
+
+.page-center {
+  display: flex;
+  justify-content: center;
+}
+
+.feed {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* CARDS */
+.clickable-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* unified card styling */
+.card {
+  background-color: var(--scsu-white);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  /* important for hover animation */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* hover effect like Desk Lamp */
+.clickable-card .card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
+button {
+  background-color: var(--scsu-blue);
+  color: var(--scsu-white);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* INPUTS */
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* CENTER LOGIN / LANDING */
+.center {
+  text-align: center;
+  margin-top: 100px;
+}
