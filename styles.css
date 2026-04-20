@@ -25,11 +25,21 @@ body {
 }
 
 .nav-left {
+  font-size: 20px;
   display: inline-block;
 }
 
+.nav-center {
+  font-size: 24px;
+  display: inline-block;
+}
+
+.nav-center:hover {
+  text-decoration: underline;
+}
+
 .nav-right {
-  font-size: 14px;
+  font-size: 20px;
   cursor: pointer;
   color: var(--scsu-white);
   text-decoration: none;
@@ -82,6 +92,7 @@ body {
 
 /* BUTTONS */
 button {
+  font-size: 20px;
   background-color: var(--scsu-blue);
   color: var(--scsu-white);
   border: none;
