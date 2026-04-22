@@ -1,3 +1,6 @@
+/* =========================
+   VARIABLES
+========================= */
 :root {
   --scsu-blue: #0033A0;
   --scsu-white: #FFFFFF;
@@ -5,51 +8,18 @@
   --scsu-dark: #1a1a1a;
 }
 
-/* GLOBAL */
+/* =========================
+   GLOBAL
+========================= */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: var(--scsu-gray);
 }
 
-/* NAVBAR */
-.navbar {
-  background-color: var(--scsu-blue);
-  color: var(--scsu-white);
-  padding: 15px 20px;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-left {
-  font-size: 20px;
-  display: inline-block;
-}
-
-.nav-center {
-  font-size: 24px;
-  display: inline-block;
-}
-
-.nav-center:hover {
-  text-decoration: underline;
-}
-
-.nav-right {
-  font-size: 20px;
-  cursor: pointer;
-  color: var(--scsu-white);
-  text-decoration: none;
-}
-
-.nav-right:hover {
-  text-decoration: underline;
-}
-
-/* LAYOUT */
+/* =========================
+   LAYOUT
+========================= */
 .container {
   padding: 20px;
 }
@@ -59,64 +29,94 @@ body {
   justify-content: center;
 }
 
-.feed {
-  width: 100%;
-  max-width: 600px;
+.center {
+  text-align: center;
+  margin-top: 100px;
 }
 
-/* CARDS */
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: var(--scsu-blue);
+  color: var(--scsu-white);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-left {
+  text-decoration: none;
+  color: var(--scsu-white);
+}
+
+.nav-center {
+  font-size: 24px;
+}
+
+.nav-right {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--scsu-white);
+}
+
+.nav-left:hover,
+.nav-right:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   CARDS
+========================= */
 .clickable-card {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
-/* unified card styling */
 .card {
+  margin: 15px 0px;
+  padding: 15px;
   background-color: var(--scsu-white);
   border-radius: 10px;
-  padding: 15px;
-  margin: 15px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-  /* important for hover animation */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* hover effect like Desk Lamp */
 .clickable-card .card:hover {
   transform: scale(1.02);
   cursor: pointer;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* BUTTONS */
+/* =========================
+   FORM ELEMENTS
+========================= */
+input {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   background-color: var(--scsu-blue);
   color: var(--scsu-white);
   border: none;
-  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
   opacity: 0.9;
-}
-
-/* INPUTS */
-input {
-  padding: 10px;
-  margin: 10px 0;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-/* CENTER LOGIN / LANDING */
-.center {
-  text-align: center;
-  margin-top: 100px;
 }
