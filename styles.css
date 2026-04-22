@@ -2,7 +2,7 @@
    VARIABLES
 ========================= */
 :root {
-  --scsu-blue: #0033A0;
+  --scsu-blue: #003399;
   --scsu-white: #FFFFFF;
   --scsu-gray: #F4F4F4;
   --scsu-dark: #1a1a1a;
@@ -31,7 +31,7 @@ body {
 
 .center {
   text-align: center;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 input {
