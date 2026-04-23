@@ -25,6 +25,10 @@ body {
   margin-top: 125px;
 }
 
+.listing {
+  margin-top: 25px;
+}
+
 .page-center {
   display: flex;
   justify-content: center;
